@@ -34,7 +34,10 @@ jobs:
         run: npm install
 
       - name: Compile templates
-        run: node compile-templates.js
+        run: node compile-templates.js || true
+
+      - name: Create .nojekyll
+        run: touch .nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
