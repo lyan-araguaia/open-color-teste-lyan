@@ -73,7 +73,7 @@ document
     var usuarios = JSON.parse(localStorage.getItem("usuarios_projeto")) || [];
 
     if (emailDigitado === "admin@email.com" && senhaDigitada === "123456") {
-      localStorage.setItem("oc_logado", "true");
+      sessionStorage.setItem("oc_logado", "true");
       window.location.href = "/";
       return;
     }
@@ -90,7 +90,7 @@ document
     }
 
     if (contaValida) {
-      localStorage.setItem("oc_logado", "true");
+      sessionStorage.setItem("oc_logado", "true");
       window.location.href = "/";
     } else {
       caixaErro.innerText = "Email ou senha incorretos.";
