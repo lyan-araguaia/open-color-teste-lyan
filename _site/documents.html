@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Open Color</title>
+  <link rel="shortcut icon" href="/asset/favicon/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/asset/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/asset/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/asset/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/asset/favicon/favicon-16x16.png" sizes="16x16" />
+  <meta name="description" content="Color scheme for UI design" />
+  <meta name="application-name" content="Open Color" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/asset/favicon/mstile-144x144.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@_heeyeun">
+  <meta name="twitter:creator" content="@_heeyeun" />
+  <meta property="og:title" content="Open Color" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yeun.github.io/open-color/" />
+  <meta property="og:description" content="Color scheme for UI design" />
+  <meta property="og:image" content="https://yeun.github.io/open-color/asset/images/og-image.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-52837717-3', 'auto');
+    ga('send', 'pageview');
+
+    function copyToClipboard(hex) {
+      var input = document.createElement('input');
+      input.setAttribute('value', hex);
+      document.body.appendChild(input);
+      input.select();
+      var result = document.execCommand('copy');
+      document.body.removeChild(input);
+      return result;
+    };
+  </script>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="container">
+      <a class="blog-logo" href="/"></a>
+      <div class="navbar">
+        <input type="checkbox" id="navbar-toggle">
+        <label for="navbar-toggle" onclick class="navbar-toggle"></label>
+        <ul class="nav-menus-wrap">
+          <li class="nav-menus-group">
+            <a class="menus-title
+                        " href="/">Swatches</a>
+          </li>
+          <li class="nav-menus-group">
+            <a class="menus-title
+                        " href="/ingredients.html">Ingredients</a>
+          </li>
+          <li class="nav-menus-group">
+            <a class="menus-title
+                        
+                        active
+                        ">Instructions</a>
+            <ul class="nav-menus">
+              <li><a class="nav-menu" href="/documents.html">Documents</a></li>
+              <li><a class="nav-menu" href="/gray-color.html">Gray Color</a></li>
+              <li><a class="nav-menu" href="/chromatic-colors.html">Chromatic Color</a></li>
+            </ul>
+          </li>
+          <li class="nav-menus-group">
+            <button class="menus-title" type="button">Downloads</button>
+            <ul class="nav-menus">
+              <li><a class="nav-menu" href="https://github.com/yeun/open-color/releases/download/v1.9.1/open-color.zip" download>Source code</a></li>
+              <li><a class="nav-menu" href="http://adobe.ly/2cYxrjk" target="blank">Adobe library</a></li>
+              <li><a class="nav-menu" href="/asset/download/open-color_1.9.1.aco" download>Photoshop swatches</a></li>
+              <li><a class="nav-menu" href="/asset/download/open-color_1.9.1.ase" download>Illustrator swatches</a></li>
+              <li><a class="nav-menu" href="/asset/download/open-color_1.9.1.sketchpalette" download>Sketch palette</a></li>
+              <li><a class="nav-menu" href="/asset/download/open-color_1.9.1.gpl" download>Inkscape swatches</a></li>
+              <li><a class="nav-menu" href="/asset/download/open-color_1.9.1.clr" download>Mac OS palette</a></li>
+              <li><a class="nav-menu" href="/asset/download/open-color_1.9.1.code-snippets" download>VS Code Snippets</a></li>
+              <li><a class="nav-menu" href="https://www.figma.com/file/Qj5TvDTLjOBynKQT6995eToz/Open-Color">Figma library ↗️</a></li>
+            </ul>
+          </li>
+          <li class="nav-menus-group"><a class="menus-title menus-github" href="https://github.com/yeun/open-color">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="cover">
+      <div class="cover-content">
+        <h1>
+          Open color is an <br>
+          <span class="no-wrap">open-source</span>
+          <span class="no-wrap">color scheme</span>
+          <div class="sub">Optimized for UI like font, background, border, etc.</div>
+          <div></div>
+        </h1>
+        <div class="metadata">
+          <div class="version">
+            Version 1.9.1
+          </div>
+          <div class="license">
+            MIT license
+          </div>
+        </div>
+      </div>
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=yeungithubioopencolor" id="_carbonads_js"></script>
+    </section>
+  </div>
+  <div class="container">
+    <div class="docs-wrap">
+
+  <section class="docs-section">
+    <h3 class="docs-title">Goals</h3>
+    <div class="docs-content">
+      <ul>
+        <li>All colors shall have adequate use</li>
+        <li>Provide general color for UI design</li>
+        <li>All colors will be beautiful in itself and harmonious</li>
+        <li>At the same brightness level, the perceived brightness will be constant</li>
+      </ul>
+    </div>
+  </section>
+  <section class="docs-section">
+    <h3 class="docs-title">Installation</h3>
+    <div class="docs-content">
+    <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm <span class="nb">install </span>open-color</code></pre></figure>
+    </div>
+  </section>
+  <section class="docs-section">
+    <h3 class="docs-title">Variable convention</h3>
+    <div class="docs-content">
+      <ul>
+        <li>Sass, SCSS: <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="err">$</span><span class="nt">oc-</span><span class="o">(</span><span class="nt">color</span><span class="o">)</span><span class="nt">-</span><span class="o">(</span><span class="nt">number</span><span class="o">)</span></code></pre></figure></li>
+        <li>Less: <figure class="highlight"><pre><code class="language-less" data-lang="less">@oc-(color)-(number)</code></pre></figure></li>
+        <li>Stylus: <figure class="highlight"><pre><code class="language-stylus" data-lang="stylus">oc-(color)-(number)</code></pre></figure></li>
+        <li>CSS: <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">--oc-</span><span class="o">(</span><span class="nt">color</span><span class="o">)</span><span class="nt">-</span><span class="o">(</span><span class="nt">number</span><span class="o">)</span></code></pre></figure></li>
+      </ul>
+      <ul>
+        <li>
+          <span class="list-title">oc</span>
+          Abbreviation for Open color
+        </li>
+        <li>
+          <span class="list-title">(color)</span>
+          Color name like gray, red, lime ect.
+        </li>
+        <li>
+          <span class="list-title">(number)</span>
+          0 to 9. 0 to 9. Brightness spectrum.
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="docs-section">
+    <h3 class="docs-title">How to use</h3>
+    <div class="docs-content">
+      Import the file to your project and use the variables.
+      <h4 class="docs-subtitle">Example for Sass, SCSS</h4>
+
+      <figure class="highlight"><pre><code class="language-scss" data-lang="scss">  <span class="k">@import</span> <span class="s1">'path/open-color'</span><span class="p">;</span>
+
+  <span class="nc">.body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$oc-gray-0</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$oc-gray-7</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$oc-teal-7</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nd">:hover</span><span class="o">,</span>
+    <span class="k">&amp;</span><span class="nd">:focus</span><span class="o">,</span>
+    <span class="k">&amp;</span><span class="nd">:active</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nv">$oc-indigo-7</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span></code></pre></figure>
+      
+       <h4 class="docs-subtitle">Example for Tailwind CSS</h4>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// tailwind.config.js      </span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">presets</span><span class="p">:</span> <span class="p">[</span><span class="nf">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">./open-color.js</span><span class="dl">"</span><span class="p">)],</span>
+  <span class="na">purge</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="na">mode</span><span class="p">:</span> <span class="dl">"</span><span class="s2">jit</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">darkMode</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="na">theme</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="p">},</span>
+  <span class="na">variants</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">extend</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="p">},</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">[],</span>
+<span class="p">};</span></code></pre></figure>
+      
+
+      <h4 class="docs-subtitle">Example for Less</h4>
+      <figure class="highlight"><pre><code class="language-scss" data-lang="scss">  <span class="k">@import</span> <span class="s1">'path/open-color'</span><span class="p">;</span>
+
+  <span class="nc">.body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="o">@</span><span class="n">oc-gray-0</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="o">@</span><span class="n">oc-gray-7</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="o">@</span><span class="n">oc-teal-7</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nd">:hover</span><span class="o">,</span>
+    <span class="k">&amp;</span><span class="nd">:focus</span><span class="o">,</span>
+    <span class="k">&amp;</span><span class="nd">:active</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="o">@</span><span class="n">oc-indigo-7</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span></code></pre></figure>
+
+      <h4 class="docs-subtitle">Example for Stylus</h4>
+      <figure class="highlight"><pre><code class="language-stylus" data-lang="stylus">  @import 'path/open-color.styl'
+
+  .body
+    background-color: oc-gray-0
+    color: oc-gray-7
+
+  a
+    color: oc-teal-7;
+
+    &amp;:hover
+    &amp;:focus
+    &amp;:active
+      color: oc-indigo-7</code></pre></figure>
+
+      <h4 class="docs-subtitle">Example for CSS</h4>
+      <figure class="highlight"><pre><code class="language-css" data-lang="css">  <span class="k">@import</span> <span class="s2">'path/open-color.css'</span><span class="p">;</span>
+
+  <span class="nc">.body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="l">--oc-gray-0</span><span class="p">);</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="l">--oc-gray-7</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="l">--oc-teal-7</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span>
+  <span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span>
+  <span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="l">--oc-indigo-7</span><span class="p">);</span>
+  <span class="p">}</span></code></pre></figure>
+
+    </div>
+  </section>
+  <section class="docs-section">
+    <h3 class="docs-title">Contribution</h3>
+    <div class="docs-content">
+      <p>Check out the list below.</p>
+      <h4 class="docs-subtitle">Color value</h4>
+      <ul>
+        <li><code>open-color.json</code>
+          <ul>
+            <li>Change and <code>$ npm run compile-templates</code></li>
+          </ul>
+        </li>
+        <li><code>docs/asset/download/open-color_*.*.*.aco</code></li>
+        <li><code>docs/asset/download/open-color_*.*.*.clr</code></li>
+        <li>Adobe library (admin rights)</li>
+      </ul>
+      <h4 class="docs-subtitle">Version number</h4>
+      <ul>
+        <li><code>package.json</code></li>
+        <li><code>docs/asset/download/open-color_*.*.*.aco</code></li>
+        <li>Adobe library (admin rights)</li>
+      </ul>
+      <h4 class="docs-subtitle">Document</h4>
+      <ul>
+        <li><code>README.md</code></li>
+        <li><code>docs/documents.html</code></li>
+      </ul>
+
+      <h4 class="docs-subtitle">Introduction</h4>
+      <ul>
+        <li><code>README.md</code></li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+  </div>
+
+  <body>
+    <script>
+      if (!localStorage.getItem("oc_logado")) {
+        window.location.href = "/login.html";
+      }
+    </script>
+  </body>
+
+</html>
