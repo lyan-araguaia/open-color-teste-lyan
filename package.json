@@ -14,7 +14,7 @@
     "open-color.d.ts"
   ],
   "scripts": {
-    "test": "jest --coverage --coverageReporters=lcov text",
+    "test": "jest --coverage --coverageReporters=lcov",
     "test-typescript": "tsc open-color.d.ts tests/typescript.ts --noEmit",
     "compile-templates": "node compile-templates.js",
     "prepare": "npm run compile-templates",
